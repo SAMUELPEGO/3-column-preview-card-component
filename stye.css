@@ -1,0 +1,94 @@
+:root {
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+--Verylightgraybackgroundheadingsbuttons: hsl(0, 0%, 95%);
+--Font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+body {
+  /* flex-wrap: wrap;
+  justify-content:space-evenly ;
+  display: flex; */
+}
+main {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+  
+}
+section {
+  width: 355px;
+  padding: 50px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  
+ 
+  
+}
+section * {
+  width: 100%;
+}
+.section_sedan {
+  background: hsl(31, 77%, 52%);
+}
+.section_suvs {
+  background: hsl(184, 100%, 22%);
+}
+.section_luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-size: 55px;
+  font-variant-caps:all-petite-caps;
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: hsl(0, 0%, 80%);
+}
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+}
+.section_sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.section_suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.section_luxury button {
+  color: hsl(179, 100%, 13%);
+}
+button:active {
+  background: none;
+  border: 3px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+footer {
+  margin-top: -200px;
+}
+@media only screen and (min-width: 1080px) {
+   main {
+    min-height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(3,355px);
+    grid-template-rows: 450px;
+    margin-top: calc((100vh - 469px)/2);
+   }
+
+}
